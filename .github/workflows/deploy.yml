@@ -20,6 +20,7 @@ jobs:
       with:
         driver: docker-container
         install: true
+        driver-opts: image=moby/buildkit:latest  # 사전에 다운로드한 Buildkit 이미지 사용
 
     # 3. Docker 레이어 캐시 설정
     - name: Cache Docker layers
